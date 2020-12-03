@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #583d72;
+  background-color: #1b58c0;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -33,12 +33,12 @@ body {
 }
 
 .container {
-  perspective: 500px;
+  perspective: 1000px;
   margin-bottom: 30px;
 }
 
 .seat {
-  background-color: #9f5f80;
+  background-color: #444451;
   height: 12px;
   width: 15px;
   margin: 3px;
