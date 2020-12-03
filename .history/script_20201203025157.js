@@ -11,6 +11,6 @@ container.addEventListener("click", (e) => {
     e.target.classList.contains("seat") &&
     !e.target.classList.contains("occupied")
   ) {
-    e.target.classList.toggle("selected");
+    e.target.classList.add("selected");
   }
 });
