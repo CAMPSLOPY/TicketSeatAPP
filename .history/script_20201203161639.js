@@ -12,10 +12,9 @@ container.addEventListener("click", (e) => {
     !e.target.classList.contains("occupied")
   ) {
     e.target.classList.toggle("selected");
-    updateCountedSeats();
   }
 });
 
-function updateCountedSeats() {
-  const selectedSeat = document.querySelectorAll(".row .seats.selected");
+function updateCountedSeats(){
+  const selectedSeat = document.
 }
