@@ -21,6 +21,6 @@ function updateCountedSeats() {
 
   const selectedSeatCount = selectedSeats.length;
 
- count.innerText = selectedSeatCount;
- total.innerText = selectedSeatCount * ticketPrice;
+  const movieCount = movieSelect * ticketPrice;
+  console.log()
 }

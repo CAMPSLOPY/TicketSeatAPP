@@ -22,5 +22,5 @@ function updateCountedSeats() {
   const selectedSeatCount = selectedSeats.length;
 
  count.innerText = selectedSeatCount;
- total.innerText = selectedSeatCount * ticketPrice;
+ total.innerText = selectedSeatCount 
 }
