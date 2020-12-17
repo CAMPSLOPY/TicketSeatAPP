@@ -32,7 +32,7 @@ function updateCountedSeats() {
 
   // saving our function to LOCAL STORAGE
   localStorage.setItem("selectedSeats", JSON.stringify(seatsIndex));
-  // JSON.stringify is used to turn an array into a string...
+  // JSON.stringify is used to 
 
   const selectedSeatCount = selectedSeats.length;
 
