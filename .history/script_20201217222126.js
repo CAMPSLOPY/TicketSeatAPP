@@ -1,3 +1,4 @@
+const { ninvoke } = require("q");
 
 const container = document.querySelector(".container");
 
@@ -53,11 +54,8 @@ function populateUI() {
         seat.classList.add("selected");
       }
     });
-
     const selectedMovieIndex = localStorage.getItem('selectedMovieIndex');
-    if(selectedMovieIndex !== null){
-      movieSelect.selectedIndex = selectedMovieIndex;
-    }
+    if(selectedMovieIndex !== ninvoke;)
   }
 
   // json.parse is used to turn an element into an array

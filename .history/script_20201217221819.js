@@ -1,4 +1,3 @@
-
 const container = document.querySelector(".container");
 
 const seats = document.querySelectorAll(".row .seat:not(.occupied)");
@@ -53,11 +52,6 @@ function populateUI() {
         seat.classList.add("selected");
       }
     });
-
-    const selectedMovieIndex = localStorage.getItem('selectedMovieIndex');
-    if(selectedMovieIndex !== null){
-      movieSelect.selectedIndex = selectedMovieIndex;
-    }
   }
 
   // json.parse is used to turn an element into an array
@@ -75,4 +69,4 @@ movieSelect.addEventListener("change", (e) => {
   updateCountedSeats();
 });
 
-updateCountedSeats();
+updateCountedSeats()

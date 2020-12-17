@@ -1,4 +1,3 @@
-
 const container = document.querySelector(".container");
 
 const seats = document.querySelectorAll(".row .seat:not(.occupied)");
@@ -43,25 +42,6 @@ function updateCountedSeats() {
   total.innerText = selectedSeatCount * ticketPrice;
 }
 
-//  this function will be used to get data from the  local storage and to populate the Ui
-function populateUI() {
-  const selectedSeats = JSON.parse(localStorage.getItem("selectedSeats"));
-
-  if (selectedSeats !== null && selectedSeats.length > 0) {
-    seats.forEach((seat, index) => {
-      if (selectedSeats.indexOf(index) > -1) {
-        seat.classList.add("selected");
-      }
-    });
-
-    const selectedMovieIndex = localStorage.getItem('selectedMovieIndex');
-    if(selectedMovieIndex !== null){
-      movieSelect.selectedIndex = selectedMovieIndex;
-    }
-  }
-
-  // json.parse is used to turn an element into an array
-}
 // save selected movie index and price
 function setMovieData(movieIndex, moviePrice) {
   localStorage.setItem("selectedMovieIndex", movieIndex);
@@ -74,5 +54,3 @@ movieSelect.addEventListener("change", (e) => {
   // we are using the (+) to turn the string into a number.
   updateCountedSeats();
 });
-
-updateCountedSeats();
