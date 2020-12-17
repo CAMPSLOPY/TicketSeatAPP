@@ -52,9 +52,7 @@ function setMovieData(movieIndex, moviePrice) {
 function populateUI() {
   const selectedSeats = JSON.parse(localStorage.getItem("selectedSeats"));
    if(selectedseats !== null && selectedSeats.length > 0){
-     seats.forEach((seat,index) =>{
-       
-     })
+     seats.forEach(seat, index)
    }
 
   // json.parse is used to turn an element into an array

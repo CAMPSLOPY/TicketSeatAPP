@@ -6,7 +6,7 @@ const total = document.getElementById("total");
 const movieSelect = document.getElementById("movie");
 let ticketPrice = +movieSelect.value;
 
-populateUI();
+populateUi();
 
 // seat select event
 container.addEventListener("click", (e) => {
@@ -48,17 +48,8 @@ function setMovieData(movieIndex, moviePrice) {
   localStorage.setItem("selectedMoviePrice", moviePrice);
 }
 
-//  this function will be used to get data from the  local storage and to populate the Ui
-function populateUI() {
-  const selectedSeats = JSON.parse(localStorage.getItem("selectedSeats"));
-   if(selectedseats !== null && selectedSeats.length > 0){
-     seats.forEach((seat,index) =>{
-       
-     })
-   }
-
-  // json.parse is used to turn an element into an array
-}
+//  this function will be used to get data from local storage
+function populateUi() {}
 // movie select event
 movieSelect.addEventListener("change", (e) => {
   ticketPrice = +e.target.value;
