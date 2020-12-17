@@ -40,10 +40,7 @@ function updateCountedSeats() {
 }
 
 // save selected movie index and price
-function setMovieData(movieIndex, moviePrice) {
-  localStorage.setItem("selectedMovieIndex", movieIndex);
-  localStorage.setItem("selectedMoviePrice", moviePrice);
-}
+function setMovieData
 
 // movie select event
 movieSelect.addEventListener("change", (e) => {

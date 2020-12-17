@@ -39,12 +39,6 @@ function updateCountedSeats() {
   total.innerText = selectedSeatCount * ticketPrice;
 }
 
-// save selected movie index and price
-function setMovieData(movieIndex, moviePrice) {
-  localStorage.setItem("selectedMovieIndex", movieIndex);
-  localStorage.setItem("selectedMoviePrice", moviePrice);
-}
-
 // movie select event
 movieSelect.addEventListener("change", (e) => {
   ticketPrice = +e.target.value;

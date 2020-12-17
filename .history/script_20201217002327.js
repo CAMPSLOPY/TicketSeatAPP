@@ -22,27 +22,12 @@ function updateCountedSeats() {
   const selectedSeats = document.querySelectorAll(".row .seat.selected");
 
   // how to save to local storage
-  // copy the selectedseat into an arr by using spread operator
-  const seatsIndex = [...selectedSeats].map((seat) => {
-    return [...seats].indexOf(seat);
-  });
-  // map through the arr
-
-  // return a new arr of indexes
-
-  // saving our function to LOCAL STORAGE
-  localStorage.setItem("selectedSeats", JSON.stringify(seatsIndex));
-
+  // copy the selectedseat into an arr
+  // 
   const selectedSeatCount = selectedSeats.length;
 
   count.innerText = selectedSeatCount;
   total.innerText = selectedSeatCount * ticketPrice;
-}
-
-// save selected movie index and price
-function setMovieData(movieIndex, moviePrice) {
-  localStorage.setItem("selectedMovieIndex", movieIndex);
-  localStorage.setItem("selectedMoviePrice", moviePrice);
 }
 
 // movie select event

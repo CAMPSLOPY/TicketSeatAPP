@@ -31,18 +31,12 @@ function updateCountedSeats() {
   // return a new arr of indexes
 
   // saving our function to LOCAL STORAGE
-  localStorage.setItem("selectedSeats", JSON.stringify(seatsIndex));
+  localStorage.setItem('')
 
   const selectedSeatCount = selectedSeats.length;
 
   count.innerText = selectedSeatCount;
   total.innerText = selectedSeatCount * ticketPrice;
-}
-
-// save selected movie index and price
-function setMovieData(movieIndex, moviePrice) {
-  localStorage.setItem("selectedMovieIndex", movieIndex);
-  localStorage.setItem("selectedMoviePrice", moviePrice);
 }
 
 // movie select event
